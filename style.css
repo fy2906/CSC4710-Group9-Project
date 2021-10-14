@@ -1,0 +1,70 @@
+body {
+    background-color: #FFF;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+h2 {
+    padding-bottom: 40px;
+    color: #00A19D;
+    font-size:200%;
+    text-align: center;
+}
+
+
+.main-section {
+    background: transparent;
+    max-width: 500px;
+    width: 90%;
+    height: 500px;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+.add-todo-section {
+    background-color: #FFF8E5;
+    border-radius: 5%;
+}
+
+.create-area {
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-bottom: 25px;
+}
+
+.error {
+color: #FF0000;
+}
+
+.about-author {
+    text-align: center;
+    text-decoration: none;
+    color: #00A19D;
+}
+
+.author-infor {
+    background: transparent;
+    max-width: 500px;
+    width: 200%;
+    height: 500px;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+image {
+    padding-right: 30px;
+}
+
+h4 {
+    padding-left: 30px;
+}
+
+.image-txt-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border:1px solid lightgray;
+  }
