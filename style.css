@@ -19,7 +19,7 @@ h2 {
     background: transparent;
     max-width: 500px;
     width: 90%;
-    height: 500px;
+    height: 400px;
     margin: 30px auto;
     border-radius: 10px;
 }
@@ -39,17 +39,13 @@ h2 {
 color: #FF0000;
 }
 
-.about-author {
-    text-align: center;
-    text-decoration: none;
-    color: #00A19D;
-}
+
 
 .author-infor {
     background: transparent;
     max-width: 500px;
     width: 200%;
-    height: 500px;
+    height: 300px;
     margin: 30px auto;
     border-radius: 10px;
 }
@@ -67,4 +63,15 @@ h4 {
     align-items: center;
     flex-direction: row;
     border:1px solid lightgray;
+  }
+
+  .about-author {
+    text-align: center;
+    padding-bottom: 150px;
+}
+
+  #about-author {
+      font-size: x-large;
+      text-decoration: none;
+
   }

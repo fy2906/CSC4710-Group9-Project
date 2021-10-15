@@ -16,20 +16,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $taskErr = "Task is required";
   } else {
     $task = test_input($_POST["task"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z-' ]*$/",$task)) {
-      $taskErr = "Only letters and white space allowed";
-    }
   }
   
   if (empty($_POST["duedate"])) {
     $duedateErr = "due date is required";
   } else {
     $duedate = test_input($_POST["duedate"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($duedate, FILTER_VALIDATE_EMAIL)) {
-      $duedateErr = "Invalid due date format";
-    }
+    // do we need to check if date is right format??
   }
     
   if (empty($_POST["priority"])) {
@@ -101,11 +94,11 @@ function test_input($data) {
 </div>
 
 <div class="about-author">
-  <A HREF="author.html">About Authors</A>
+  <A id="about-author" HREF="author.html">About Authors</A>
 </div>
 
 
-<?php
+<!-- <?php
 echo "<h2>Your Input:</h2>";
 echo $task;
 echo "<br>";
@@ -116,7 +109,7 @@ echo "<br>";
 echo $priority;
 echo "<br>";
 echo $status;
-?>
+?> -->
 </body>
 
 
