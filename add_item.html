@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lan="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Add an item</title>
+</head>
+<body>
+    <h1>Add an item</h1>
+    <form method="POST" action="db_add_item.php">
+        <label for="description">Task Description: </label>
+        <input type="text" name="description" required /><br>
+        <label for="dueDate">Due Date(YYYY-MM-DD):</label>
+        <input type="text" name="dueDate" required /><br>
+        <label for="category">Category:</label>
+        <input type="text" name="category"/><br>
+        <p>Priority(1 is highest):</p>
+        <label for="priority">1</label>
+        <input type="radio" name="priority" value="1" checked/>
+        <br>
+        <label for="priority">2</label>
+        <input type="radio" name="priority" value="2" />
+        <br>
+        <label for="priority">3</label>
+        <input type="radio" name="priority" value="3" />
+        <br>
+        <label for="priority">4</label>
+        <input type="radio" name="priority" value="4" />
+        <br>
+        <p>Status:</p>
+        <label for="status">Incomplete</label>
+        <input type="radio" name="status" value="Incomplete" checked/>
+        <br>
+        <label for="status">Complete</label>
+        <input type="radio" name="status" value="Complete" />
+        <br>
+        <input type="submit" value="Add item" />
+    </form>
+</body>
+</html>
